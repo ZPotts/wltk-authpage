@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="sidebars.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <title>Auth Components</title>
 </head>
 
@@ -17,135 +17,125 @@
 
   <div class="container-fluid" id="main-container">
     <div class="row">
-      <div class="col-3 border border-top-0 border-bottom-0 border-left-0">
-        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-          <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-            <svg class="bi me-2" width="30" height="24">
-              <use xlink:href="#bootstrap" /></svg>
-            <span class="fs-5 fw-semibold">Auth</span>
-          </a>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#name-collapse" aria-expanded="true">
-                Name
-              </button>
-              <div class="collapse show" id="name-collapse">
+        <div id="sidebar" class="col-3 border border-top-0 border-bottom-0 border-left-0">
+          <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+              <svg class="bi me-2" width="30" height="24">
+                <use xlink:href="#bootstrap" /></svg>
+              <span class="fs-5 fw-semibold">Auth Components</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Name
+                </div>
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                   <li><a href="#" class="link-dark rounded">Name</a></li>
                 </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#zip-collapse" aria-expanded="true">
-                Zip Code
-              </button>
-              <div class="collapse show" id="zip-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Numeric Input (5 digits)</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#yob-collapse" aria-expanded="true">
-                Year of Birth
-              </button>
-              <div class="collapse show" id="yob-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Numeric Input (5 digits)</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#mdbirth-collapse" aria-expanded="true">
-                Month/Day of Birth
-              </button>
-              <div class="collapse show" id="mdbirth-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#dob-collapse" aria-expanded="true">
-                Full DOB (MM/DD/YYYY)
-              </button>
-              <div class="collapse show" id="dob-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#memnum-collapse" aria-expanded="true">
-                Member Number
-              </button>
-              <div class="collapse show" id="memnum-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#code-collapse" aria-expanded="true">
-                Code Word
-              </button>
-              <div class="collapse show" id="code-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                data-bs-target="#mid-collapse" aria-expanded="true">
-                Member ID
-              </button>
-              <div class="collapse show" id="mid-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Name</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Zip Code
+                </div>
 
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Numeric Input (5 digits)</a></li>
+                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
+                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
+                </ul>
+
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Year of Birth
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Numeric Input (Year)</a></li>
+                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
+                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Month/Day of Birth
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Numeric Input (Month/Day)</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Full DOB (MM/DD/YYYY)
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">DOB Auth</a></li>
+                  <li><a href="#" class="link-dark rounded">Word Auth</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Member Number
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Numeric Input</a></li>
+                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Code Word
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Word Auth</a></li>
+                  <li><a href="#" class="link-dark rounded">Advanced Word Auth</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <div class="sidebar-header align-items-center rounded">
+                  Member ID
+                </div>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Member ID</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div id="main" class="col p-5">
+
+          <div class="authblock container p-2">
+            <div class="row">
+              <div class="col col-3 p-2 ps-4">
+                <img src="./img/authpill_yn.png" class="mb-2" />
+                <h4>Y/N Auth</h4>
+              </div>
+              <div class="col col-9 border-start border-dark px-4 py-2">
+                <p>Other col</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col">      
-      </div>
-    </div>
   </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
 </body>
 
