@@ -20,13 +20,19 @@ html {
 
 
 /* general elements */
+h5 {
+  color: #0087ab;
+}
+
 h5:not(:first-of-type){
   margin-top: 2.5rem;
 }
 
+
 hr {
   margin: 0 0 .5rem 0;
   opacity: .5;
+  color: #0087ab
 }
 
 
