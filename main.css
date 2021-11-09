@@ -128,7 +128,7 @@ main {
 }
 
 .type-of-auth:not(:first-of-type){
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .type-of-auth h2 {
@@ -137,6 +137,7 @@ main {
 
 .authblock {
   background-color:#ffffff; 
+  margin-bottom: 2rem;
 }
 
 .tech_col1 {

@@ -20,147 +20,499 @@
 
   <div class="container-fluid" id="main-container">
     <div class="row">
-        <div id="sidebar" class="col-3 border border-top-0 border-bottom-0 border-left-0">
-          <div class="flex-shrink-0 p-3 bg-white sticky-top" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-              <svg class="bi me-2" width="30" height="24">
-                <use xlink:href="#bootstrap" /></svg>
-              <span class="fs-5 fw-semibold">Auth Components</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  <a href="#name-auth" class="link-dark rounded">Name</a>
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#name-auth-yn" class="link-dark rounded">Y/N Name Auth</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  <a href="#zip-auth" class="link-dark rounded">Zip Code</a>
-                </div>
+      <div id="sidebar" class="col-3 border border-top-0 border-bottom-0 border-left-0">
+        <div class="flex-shrink-0 p-3 bg-white sticky-top" style="width: 280px;">
+          <h5><span class="fs-5 fw-semibold">Auth Components</span></h5>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#name-auth" class="link-dark rounded">Name</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#name-auth-yn" class="link-dark rounded">Y/N Name Auth</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#zip-auth" class="link-dark rounded">Zip Code</a>
+              </div>
 
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#zip-num-5digit" class="link-dark rounded">Numeric Input (5 digits)</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
-                </ul>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#zip-ni" class="link-dark rounded">Numeric Input (5 digits)</a></li>
+                <li><a href="#zip-ana" class="link-dark rounded">Advanced Numeric Auth</a></li>
+                <li><a href="#zip-na" class="link-dark rounded">Numeric Auth</a></li>
+              </ul>
 
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Year of Birth
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Numeric Input (Year)</a></li>
-                  <li><a href="#" class="link-dark rounded">Numeric Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Month/Day of Birth
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Numeric Input (Month/Day)</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Full DOB (MM/DD/YYYY)
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">DOB Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Word Auth</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Member Number
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Numeric Input</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Numeric Auth</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Code Word
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Word Auth</a></li>
-                  <li><a href="#" class="link-dark rounded">Advanced Word Auth</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <div class="sidebar-header align-items-center rounded">
-                  Member ID
-                </div>
-                <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Member ID</a></li>
-                </ul>
-              </li>
-            </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#yob-auth" class="link-dark rounded">Year of Birth</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#yob-ni" class="link-dark rounded">Numeric Input (Year)</a></li>
+                <li><a href="#yob-na" class="link-dark rounded">Numeric Auth</a></li>
+                <li><a href="#yob-ana" class="link-dark rounded">Advanced Numeric Auth</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#mmdd-auth" class="link-dark rounded">Month/Day of Birth</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#mmdd-ni" class="link-dark rounded">Numeric Input (Month/Day)</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#dob-auth" class="link-dark rounded">Full DOB (MM/DD/YYYY)</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#dob-ni" class="link-dark rounded">DOB Auth</a></li>
+                <li><a href="#dob-wa" class="link-dark rounded">Word Auth</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#memnum-auth" class="link-dark rounded">Member Number</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#memnum-ni" class="link-dark rounded">Numeric Input</a></li>
+                <li><a href="#memnum-ana" class="link-dark rounded">Advanced Numeric Auth</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#codeword-auth" class="link-dark rounded">Code Word</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#codeword-wa" class="link-dark rounded">Word Auth</a></li>
+                <li><a href="#codeword-awa" class="link-dark rounded">Advanced Word Auth</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-unstyled ps-0 mb-0">
+            <li class="mb-1">
+              <div class="sidebar-header align-items-center rounded">
+                <a href="#mid-auth" class="link-dark rounded">Member ID</a>
+              </div>
+              <ul class="sidebar-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Member ID</a></li>
+              </ul>
+            </li>
+          </ul>
 
+        </div>
+      </div> <!-- END SIDEBAR-->
+
+      <div id="main" class="col p-5">
+
+        <div id="name-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-person-check-fill"></i>
+            NAME AUTH</h2>
+        </div>
+        <!-- NAME AUTH - Y/N -->
+        <div id="name-auth-yn" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_yn.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Y/N Auth - Name Authentication</strong></p>
+
+              <p><em>Yes/No - Name Auth is the <strong>required, first step of authentication</strong> for any call that
+                  uses auths.</em></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+
+
+
+              <h5><i class="bi-question-circle" style="font-size: 1.4rem; margin-top:7px;"></i> When to use it</h5>
+              <hr />
+
+
+              <ul>
+                <li><strong>Does the call require a single point of authentication?</strong><br /> Use Yes/No Name Auth.
+                </li>
+                <li><strong>Does the call require more than one point of authentication?</strong><br />
+                  Start with Yes/No Name Auth.</li>
+              </ul>
+
+              <p>You will always use Yes/No - Name Auth, in any call that requires authentication.</p>
+
+              <h5><i class="bi bi-plus-slash-minus"></i> Advantages and Limitations</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>All dialogs must have a yes/no authentication after the header.</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>None</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>No - Connects to URM when response is "No"
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>Spoken: "Yes","No"<br />
+                    DTMF: 1 for Yes. 2 for No.
+                  </td>
+                </tr>
+              </table>
+              <h5><i class="bi bi-keyboard"></i> Script Sample</h5>
+              <hr />
+              <img src="./img/script-yn-name.png" class="w-100">
+            </div>
           </div>
-        </div> <!-- END SIDEBAR-->
+        </div>
 
-        <div id="main" class="col p-5">
+        <div id="zip-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-mailbox2"></i>
+            ZIP CODE AUTH</h2>
+        </div>
 
-          <div id="name-auth" class="type-of-auth p-2">
-            <h2>NAME AUTH</h2>
+        <!-- ZIP CODE - NUMERIC INPUT -->
+        <div id="zip-ni" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ni.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
           </div>
-          <!-- NAME AUTH - Y/N -->
-          <div id="name-auth-yn" class="authblock container p-2">
+        </div>
+
+        <!-- ZIP CODE - ADVANCED NUMERIC INPUT -->
+        <div id="zip-ana" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ana.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Advanced Numeric Auth<br />(5 digit)<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <!-- ZIP CODE - NUMERIC AUTH -->
+        <div id="zip-na" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_na.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Auth<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div id="yob-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-calendar-check-fill"></i>
+            YEAR OF BIRTH AUTH</h2>
+        </div>
+
+        <!-- YOB - NUMERIC INPUT -->
+        <div id="yob-ni" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ni.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+         <!-- YOB - NUMERIC AUTH -->
+        <div id="yob-na" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_na.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Auth<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+          <!-- YOB - ADVANCED NUMERIC AUTH -->
+          <div id="yob-ana" class="authblock container p-2">
             <div class="row pt-0">
               <div class="col col-3 ps-4 pb-4">
-                <img src="./img/authpill_yn.png" class="mb-2 mw-50" style="width: 65px;"  />
-                <p><strong>Y/N Auth - Name Authentication</strong></p>
-
-                <p><em>Yes/No - Name Auth is the <strong>required, first step of authentication</strong> for any call that uses auths.</em></p>
+                <img src="./img/authpill_ana.png" class="mb-2 mw-50" style="width: 65px;" />
+                <p><strong>Advanced Numeric Auth<br />(5 digit)<br />
+                    - Zip Code</strong></p>
               </div>
               <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
-
-
-
-                <h5><i class="bi-question-circle" style="font-size: 1.4rem; margin-top:7px;"></i> When to use it</h5>
+                <h5>When to use it</h5>
                 <hr />
-         
-
+                <p><em>
+                    summary</em></p>
+  
                 <ul>
-                  <li><strong>Does the call require a single point of authentication?</strong><br /> Use Yes/No Name Auth.</li>
-                  <li><strong>Does the call require more than one point of authentication?</strong><br />
-                    Start with Yes/No Name Auth.</li>
+                  <li><strong>Criteria</strong><br /> descriptiong</li>
+  
                 </ul>
-
-                <p>You will always use Yes/No - Name Auth, in any call that requires authentication.</p>
-
-                <h5><i class="bi bi-plus-slash-minus"></i> About</h5>
+  
+                <p><strong>So...</strong>...</p>
+  
+                <h5>About</h5>
                 <hr />
                 <p class="leader">Advantages/Options</p>
                 <ul>
-                  <li>All dialogs must have a yes/no authentication after the header.</li>
+                  <li>Adv</li>
                 </ul>
                 <p class="leader">Limitations</p>
                 <ul>
-                  <li>None</li>
+                  <li>Lim</li>
                 </ul>
-
+  
                 <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
                 <hr />
                 <table class="table table-striped table-bordered tech-table">
@@ -170,88 +522,449 @@
                   </tr>
                   <tr>
                     <td class="tech_col1">Failure body needed?</td>
-                    <td>No - Connects to URM when response is "No"
+                    <td>...
                     </td>
                   </tr>
                   <tr>
                     <td class="tech_col1">Input types</td>
-                    <td>Spoken: "Yes","No"<br />
-                      DTMF: 1 for Yes. 2 for No.
+                    <td>...
                     </td>
                   </tr>
                 </table>
-                <h5><i class="bi bi-keyboard"></i> Script Sample</h5>
+                <h5>Script Sample</h5>
                 <hr />
-                <img src="./img/script-yn-name.png" class="w-100">
+                <img src="./img/script-.png" class="w-100">
               </div>
             </div>
           </div>
 
-          <div id="zip-auth" class="type-of-auth p-2">
-            <h2>ZIP CODE</h2>
+        <div id="mmdd-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-calendar-month-fill"></i>
+            MONTH/DAY OF BIRTH AUTH</h2>
+        </div>
+
+        <!-- MONTH DAY OF BIRTH - NUMERIC INPUT -->
+        <div id="mmdd-ni" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ni.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
           </div>
+        </div>
 
-                   <!-- ZIP CODE - NUMERIC INPUT -->
-                   <div id="zip-num-5digit" class="authblock container p-2">
-                    <div class="row pt-0">
-                      <div class="col col-3 ps-4 pb-4">
-                        <img src="./img/authpill_yn.png" class="mb-2 mw-50" style="width: 65px;"  />
-                        <p><strong>Y/N Auth - Name Authentication</strong></p>
-                      </div>
-                      <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
-                        <h5>When to use it</h5>
-                        <hr />
-                        <p><em>
-                          Yes/No - Name Auth is the <strong>required, first step of authentication</strong> for any call that uses auths.</em></p>
-        
-                        <ul>
-                          <li><strong>Does the call require a single point of authentication?</strong><br /> Use Yes/No Name Auth.</li>
-                          <li><strong>Does the call require more than one point of authentication?</strong><br />
-                            Start with Yes/No Name Auth.</li>
-                        </ul>
-        
-                        <p><strong>So...</strong>You will always use Yes/No - Name Auth, in any call that requires authentication.</p>
-        
-                        <h5>About</h5>
-                        <hr />
-                        <p class="leader">Advantages/Options</p>
-                        <ul>
-                          <li>All dialogs must have a yes/no authentication after the header.</li>
-                        </ul>
-                        <p class="leader">Limitations</p>
-                        <ul>
-                          <li>None</li>
-                        </ul>
-        
-                        <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
-                        <hr />
-                        <table class="table table-striped table-bordered tech-table">
-                          <tr>
-                            <td class="tech_col1">DD Items to include</td>
-                            <td>None</td>
-                          </tr>
-                          <tr>
-                            <td class="tech_col1">Failure body needed?</td>
-                            <td>No - Connects to URM when response is "No"
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="tech_col1">Input types</td>
-                            <td>Spoken: "Yes","No"<br />
-                              DTMF: 1 for Yes. 2 for No.
-                            </td>
-                          </tr>
-                        </table>
-                        <h5>Script Sample</h5>
-                        <hr />
-                        <img src="./img/script-yn-name.png" class="w-100">
-                      </div>
-                    </div>
-                  </div>
+        <div id="dob-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-calendar-event-fill"></i>
+            FULL DOB AUTH</h2>
+        </div>
+
+        <!-- DOB - DA -->
+        <div id="dob-ni" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_da.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <!-- DOB - WORD AUTH -->
+        <div id="dob-wa" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_wa.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div id="memnum-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-123"></i>
+            NUMBER (Member Number)</h2>
+        </div>
+
+        <!-- MEMBER NUMBER - NUMERIC INPUT -->
+        <div id="memnum-ni" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ni.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <!-- MEMBER NUMBER - ANA -->
+        <div id="memnum-ana" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_ana.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Advanced Numeric Auth<br />(5 digit)<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div id="codeword-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-lock-fill"></i>
+            CODE WORD</h2>
+        </div>
+
+        <!-- CODE WORD - WORD AUTH -->
+        <div id="codeword-wa" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_wa.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <!-- CODE WORD - ADV WORD AUTH -->
+        <div id="codeword-awa" class="authblock container p-2">
+          <div class="row pt-0">
+            <div class="col col-3 ps-4 pb-4">
+              <img src="./img/authpill_wa.png" class="mb-2 mw-50" style="width: 65px;" />
+              <p><strong>Numeric Input<br />
+                  - Zip Code</strong></p>
+            </div>
+            <div class="col col-9 border-start border-dark px-4 pt-0 pb-4">
+              <h5>When to use it</h5>
+              <hr />
+              <p><em>
+                  summary</em></p>
+
+              <ul>
+                <li><strong>Criteria</strong><br /> descriptiong</li>
+
+              </ul>
+
+              <p><strong>So...</strong>...</p>
+
+              <h5>About</h5>
+              <hr />
+              <p class="leader">Advantages/Options</p>
+              <ul>
+                <li>Adv</li>
+              </ul>
+              <p class="leader">Limitations</p>
+              <ul>
+                <li>Lim</li>
+              </ul>
+
+              <h5><i class="bi bi-exclamation-circle"></i> Requirements</h5>
+              <hr />
+              <table class="table table-striped table-bordered tech-table">
+                <tr>
+                  <td class="tech_col1">DD Items to include</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Failure body needed?</td>
+                  <td>...
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tech_col1">Input types</td>
+                  <td>...
+                  </td>
+                </tr>
+              </table>
+              <h5>Script Sample</h5>
+              <hr />
+              <img src="./img/script-.png" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div id="mid-auth" class="type-of-auth p-2">
+          <h2 class="ms-2"><i class="bi bi-123"></i>
+            MEMBER ID (HEALTH LINK ONLY)</h2>
+        </div>
 
 
-        </div> <!-- /END MAIN -->
-      </div> <!-- /END ROW -->
+      </div> <!-- /END MAIN -->
+    </div> <!-- /END ROW -->
   </div> <!-- /END CONTAINER -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
